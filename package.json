@@ -1,0 +1,52 @@
+{
+  "name": "@rs_scope/vue-kanban",
+  "version": "0.1.1",
+  "author": {
+    "name": "Sergey Razzhivin",
+    "email": "razgiva@gmail.com"
+  },
+  "type": "module",
+  "homepage": "https://sergeyrazzhivin.github.io/sr-vue-kanban/",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/vue-kanban.umd.js",
+      "import": "./dist/vue-kanban.es.js"
+    }
+  },
+  "main": "./dist/vue-kanban.es.tss",
+  "module": "./dist/vue-kanban.umd.ts",
+  "typings": "./dist/index.d.ts",
+  "styles": "./dist/style.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc -b && vite build",
+    "dev": "vite",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lorem-ipsum": "^2.0.8",
+    "sass-embedded": "^1.78.0",
+    "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-plugin-dts": "^4.2.1",
+    "vue": "^3.4.37"
+  },
+  "devDependencies": {
+    "@auvred/eslint-config": "^0.4.0",
+    "@types/node": "^22.5.5",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "eslint": "^8.44.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-tsc": "^2.0.29"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.45"
+  }
+}
